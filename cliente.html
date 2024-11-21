@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Cliente e Pedidos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <table class="table-header">
+            <tr>
+                <td class="table-titulo"><h1>Espetinhos</h1></td>
+                <td class="table-botoes">
+                    <a href="index.html" ><button class="btn-cabecalho"><img src="categoria.png" >Categoria</button></a>
+                    <a href="produto.html"><button class="btn-cabecalho"><img src="produto.png">Produto</button class="btn-cabecalho"></a>
+                    <a href="#"><button class="btn-cabecalho"><img src="cliente.png">Cliente</button></a>
+                </td>
+            </tr>     
+        </table>
+    </header>
+
+    <div class="container">
+        <div class="conteudo">
+            <h2 class="titulo-cadastro">Clientes / Pedidos</h2>
+            <div class="inputs-cliente">
+                <table class="table-pedidos">
+                    <tr>
+                        <td>
+                            <label for="cliente">Cliente:</label>
+                            <input type="text" name="cliente" id="cliente">
+                        </td>
+                        <td>
+                            <label for="inicio">Início:</label>
+                            <input type="date" name="inicio" id="inicio">
+                        </td>
+                        <td>
+                            <label for="fim">Fim:</label>
+                            <input type="date" name="fim" id="fim">
+                        </td>
+                        <td>
+                            <label for="situacao">Situação:</label>
+                            <select name="situacao" id="situacao">
+                                <option value="Preparação">Preparação</option>
+                                <option value="Pronto para Retirada">Pronto para Retirada</option>
+                                <option value="Pronto para Entrega">Pronto para Entrega</option>
+                                <option value="Saiu para Entrega">Saiu para Entrega</option>
+                                <option value="Entregue">Entregue</option>
+                                <option value="Retirado pelo Cliente">Retirado pelo Cliente</option>
+                                <option value="Concluído">Concluído</option>
+                                <option value="Aguardando Confirmação do Cliente">Aguardando Confirmação do Cliente</option>
+                                <option value="Pagamento Recusado">Pagamento Recusado</option>
+                                <option value="Item Indisponível">Item Indisponível</option>
+                                <option value="Cancelado">Cancelado</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="pedido">Pedido:</label>
+                            <input type="text" name="pedido" id="pedido">
+                        </td>
+                        <td>
+                            <button onclick="consultarPedido()">Consultar</button>
+                        </td>
+                    </tr>
+                </table>
+                
+                
+                
+                
+            </div>
+            
+            <table id="table-cliente">
+                <tr>
+                    <td class="table-cliente">Cliente</td>
+                    <td class="table-pedido">Pedido</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+body {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.table-header {
+    width: 100vw;
+    color: white;
+}
+
+.table-titulo {
+    background-color: rgb(26, 42, 131);
+    padding: 10px;
+    width: 50%;
+    font-size: 24px;    
+}
+
+.table-botoes {
+    background-color: rgb(119, 176, 209);
+    padding: 30px;
+}
+
+.btn-cabecalho {
+    color: white;
+    font-weight: bold; 
+    width: 80px;
+    height: 100px;
+    padding: 10px;
+    margin-right: 100px;
+    background-color: #c7c7c700;
+}
+
+.btn-cabecalho img {
+    width: 50px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.conteudo {
+    
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+
+}
+
+.margin {
+    margin-bottom: 50px;
+}
+
+.titulo-cadastro {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#table-categorias, #table-produtos, #table-cliente{
+    background-color: #c7c7c7;
+    width: 100%;
+}
+
+td {
+    border-right: 1px solid rgb(153, 153, 153);
+    padding: 10px;
+}
+
+#table-categorias td, #table-produtos td, #table-cliente td{
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+#table-categorias .table-consulta {
+    width: 25%;
+}
+
+#table-produtos .table-consulta {
+    width: 10%;
+}
+
+#table-categorias .table-codigo {
+    width: 25%;
+}
+
+#table-produtos .table-codigo {
+    width: 15%;
+    
+}
+
+#table-categorias .table-desc {
+    width: 50%;
+}
+
+#table-produtos .table-desc {
+    width: 25%;
+}
+
+.table-preco {
+    width: 15%;
+}
+
+.table-img {
+    width: 40%;
+}
+
+.conteudo-inputs {
+    padding: 30px;
+}
+
+
+
+.config label {
+    margin-right: 30px;
+}
+
+input, button, select {
+    border-radius: 10px;
+}
+
+.config input, .config select {
+    margin-right: 100px;
+}
+
+button {
+    background-color: rgb(173, 217, 241);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(175, 229, 238);
+}

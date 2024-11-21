@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <table class="table-header">
+            <tr>
+                <td class="table-titulo"><h1>Espetinhos</h1></td>
+                <td class="table-botoes">
+                    <a href="index.html" ><button class="btn-cabecalho"><img src="categoria.png" >Categoria</button></a>
+                    <a href="#"><button class="btn-cabecalho"><img src="produto.png">Produto</button class="btn-cabecalho"></a>
+                    <a href="cliente.html"><button class="btn-cabecalho"><img src="cliente.png">Cliente</button></a>
+                </td>
+            </tr>     
+        </table>
+    </header>
+
+    <div class="container">
+        <div class="conteudo config">
+            <h2 class="titulo-cadastro">Cadastro de Produtos</h2>
+            <div class="conteudo-inputs">
+                <label for="codigo" class="margin">Código:</label>
+                <input type="text" name="codigo" id="codigo" class="margin">
+                <label for="descricao" class="margin">Descrição:</label>
+                <input type="text" name="descricao" id="descricao" class="margin">
+                <label for="preco">Preço:</label>
+                <input type="text" name="preco" id="preco"><br>
+                <label for="categoria">Categoria:</label>
+                <select name="categoria" id="categoria">
+                    <option value="Espeto">Espetinho Tradicional</option>
+                    <option value="Espeto Gourmet">Espetinho Gourmet</option>
+                    <option value="Espeto Doce">Espetinho Doce</option>
+                    <option value="Espeto Vegano">Espetinho Vegano</option>
+                    <option value="Bebida">Bebida</option>
+                    <option value="Acompanhamento">Acompanhamento</option>
+                </select>
+                <label for="imagem">Imagem:</label>
+                <input type="file" name="imagem" id="imagem">
+                <button onclick="salvarProduto()">Salvar</button>
+            </div>
+            
+            <table id="table-produtos">
+                <tr>
+                    <td class="table-consulta"><button onclick="consultar()">Consultar</button></td>
+                    <td class="table-categoria">Categoria</td>
+                    <td class="table-codigo">Código</td>
+                    <td class="table-desc">Descrição</td>
+                    <td class="table-preco">Preço</td>
+                    <td class="table-img">Imagem</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Categorias</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <table class="table-header">
+            <tr>
+                <td class="table-titulo"><h1>Espetinhos</h1></td>
+                <td class="table-botoes">
+                    <a href="#" ><button class="btn-cabecalho"><img src="categoria.png" >Categoria</button></a>
+                    <a href="produto.html"><button class="btn-cabecalho"><img src="produto.png">Produto</button class="btn-cabecalho"></a>
+                    <a href="cliente.html"><button class="btn-cabecalho"><img src="cliente.png">Cliente</button></a>
+                </td>
+            </tr>     
+        </table>
+    </header>
+
+    <div class="container">
+        <div class="conteudo config">
+            <h2 class="titulo-cadastro">Cadastro de Categoria</h2>
+            <div class="conteudo-inputs">
+                <label for="codigo">Código:</label>
+                <input type="text" name="codigo" id="codigo">
+                <label for="descricao">Descrição:</label>
+                <input type="text" name="descricao" id="descricao">
+                <button onclick="salvarCategoria()">Salvar</button>
+            </div>
+            
+            <table id="table-categorias">
+                <tr>
+                    <td class="table-consulta"><button onclick="consultar()">Consultar</button></td>
+                    <td class="table-codigo">Código</td>
+                    <td class="table-desc">Descrição</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
